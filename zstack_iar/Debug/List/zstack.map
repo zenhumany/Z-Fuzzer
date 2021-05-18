@@ -1,0 +1,780 @@
+###############################################################################
+#
+# IAR ELF Linker V8.40.1.212/W32 for ARM                  14/May/2021  18:52:06
+# Copyright 2007-2019 IAR Systems AB.
+#
+#    Output file  =
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Exe\zstack.out
+#    Map file     =
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\List\zstack.map
+#    Command line =
+#        -f C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\build\zstack\link_config.xcl
+#        (C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\AF.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\bdb.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\bdb_FindingAndBinding.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\bdb_Reporting.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\bdb_tlCommissioning.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\bdb_touchlink.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\bdb_touchlink_initiator.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\bdb_touchlink_target.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_adc.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_aes.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_assert.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_ccm.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_drivers.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_key.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_lcd.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_led.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_mac_cfg.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_sys_ctrl.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_timer.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\hal_uart.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\OnBoard.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\OSAL.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\OSAL_Memory.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\OSAL_Timers.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\saddr.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\zcl.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\zcl_general.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\zcl_genericapp_data.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\zcl_ha.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\ZDApp.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\ZDConfig.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\ZDNwkMgr.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\ZDObject.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\ZDProfile.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\ZDSecMgr.o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp\ZMain.o
+#        --no_out_extension -o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Exe\zstack.out
+#        --map
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\List\zstack.map
+#        --config "C:\Program Files (x86)\IAR Systems\Embedded Workbench
+#        8.3\arm\config\linker\TexasInstruments\cx2538xf53.icf" --semihosting
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Libraries\CC2538\bin\Router.a
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Libraries\TIMAC\bin\TIMAC-CC2538.a
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Components\driverlib\cc2538\bin\iar\sdriverlib.lib
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Components\bsp\srf06eb_cc2538\drivers\bin\iar\bsp.lib
+#        --entry __iar_program_start --vfe --text_out locale) -o
+#        C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Exe\zstack.out
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__Heap_Handler  = Basic
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at address 0x20'0000 { ro section .intvec };
+"P1":  place in [from 0x20'0000 to 0x27'ffd3] { ro };
+define block HEAP with size = 4K, alignment = 8 { };
+"P2":  place in [from 0x2000'4000 to 0x2000'7fff] { rw, block HEAP };
+define block CSTACK with size = 2K, alignment = 8 { section .stack };
+"A3":  place at end of [from 0x2000'4000 to 0x2000'7fff] { block CSTACK };
+initialize by copy { rw };
+
+No sections matched the following patterns:
+
+  ro section .flashcca  in "A1"
+  section .nonretenvar  in "P3"
+  section .stack        in block CSTACK
+  section VTABLE        in "A2"
+
+
+  Section            Kind         Address    Size  Object
+  -------            ----         -------    ----  ------
+"A0":                                        0x40
+  .intvec            ro code    0x20'0000    0x40  vector_table_M.o [7]
+                              - 0x20'0040    0x40
+
+"P1":                                      0x4fd8
+  .text              ro code    0x20'0040  0x2884  zcl.o [1]
+  .text              ro code    0x20'28c4   0x1a8  OSAL_Memory.o [1]
+  .text              ro code    0x20'2a6c   0x20c  OSAL.o [1]
+  .text              ro code    0x20'2c78    0x76  ABImemcpy_unaligned.o [7]
+  .text              ro code    0x20'2cee    0x3a  zero_init3.o [7]
+  .text              ro code    0x20'2d28    0xbc  AF.o [1]
+  .text              ro code    0x20'2de4    0x7c  bdb.o [1]
+  .text              ro code    0x20'2e60    0x16  interrupt.o [8]
+  .rodata            const      0x20'2e76     0x2  ZMain.o [1]
+  .text              ro code    0x20'2e78     0x2  hal_assert.o [1]
+  .rodata            const      0x20'2e7a     0x2  xlocale_c.o [5]
+  .text              ro code    0x20'2e7c    0x66  ABImemset.o [7]
+  .text              ro code    0x20'2ee2     0x2  vector_table_M.o [7]
+  .text              ro code    0x20'2ee4    0xa4  bdb_FindingAndBinding.o [1]
+  .text              ro code    0x20'2f88   0x12c  OSAL_Timers.o [1]
+  .text              ro code    0x20'30b4    0x10  cpu.o [8]
+  .text              ro code    0x20'30c4    0x48  ZDObject.o [1]
+  .text              ro code    0x20'310c   0x501  xprintfsmall_nomb.o [5]
+  .rodata            const      0x20'360d     0x1  ZMain.o [1]
+  .rodata            const      0x20'360e     0x1  ZMain.o [1]
+  .rodata            const      0x20'360f     0x1  ZMain.o [1]
+  .text              ro code    0x20'3610    0x16  strchr.o [7]
+  .rodata            const      0x20'3626     0x1  ZMain.o [1]
+  .text              ro code    0x20'3628    0x40  xfail_s.o [5]
+  .text              ro code    0x20'3668    0x36  strlen.o [7]
+  .text              ro code    0x20'36a0    0x58  memchr.o [7]
+  .text              ro code    0x20'36f8     0x6  abort.o [5]
+  .text              ro code    0x20'3700    0x14  exit.o [9]
+  .text              ro code    0x20'3714    0x7c  iarttio.o [9]
+  .text              ro code    0x20'3790    0x3c  XShttio.o [5]
+  .text              ro code    0x20'37cc   0x338  ZMain.o [1]
+  .text              ro code    0x20'3b04    0x2a  fopen.o [5]
+  .text              ro code    0x20'3b2e    0x24  fseek.o [5]
+  .text              ro code    0x20'3b52    0x1c  ftell.o [5]
+  .text              ro code    0x20'3b6e    0x26  rewind.o [5]
+  .text              ro code    0x20'3b94    0x8c  fread.o [5]
+  .text              ro code    0x20'3c20    0x7e  fclose.o [5]
+  .text              ro code    0x20'3c9e     0x4  time_trampoline.o [5]
+  .text              ro code    0x20'3ca4    0xb0  rand.o [5]
+  .text              ro code    0x20'3d54    0x28  printf.o [5]
+  .text              ro code    0x20'3d7c    0x16  vla_alloc.o [5]
+  .text              ro code    0x20'3d94    0x4c  strtok.o [5]
+  .text              ro code    0x20'3de0    0x90  iar_Stolx.o [5]
+  .text              ro code    0x20'3e70    0x28  isprint.o [5]
+  .text              ro code    0x20'3e98     0xa  isdigit.o [5]
+  .text              ro code    0x20'3ea4    0xe4  xfofind.o [5]
+  .text              ro code    0x20'3f88    0xf4  xfoprep.o [5]
+  .text              ro code    0x20'407c    0xd8  xfspos.o [5]
+  .text              ro code    0x20'4154    0x94  xfgpos.o [5]
+  .text              ro code    0x20'41e8    0xb6  xfrprep.o [5]
+  .text              ro code    0x20'42a0    0xac  fflush.o [5]
+  .text              ro code    0x20'434c     0x4  heaptramp0.o [5]
+  .text              ro code    0x20'4350    0x18  close.o [9]
+  .text              ro code    0x20'4368    0x14  remove.o [9]
+  .text              ro code    0x20'437c    0x12  time.o [9]
+  .text              ro code    0x20'4390   0x138  heap0.o [5]
+  .text              ro code    0x20'44c8    0x22  strspn.o [5]
+  .text              ro code    0x20'44ea    0x22  strcspn.o [5]
+  .text              ro code    0x20'450c    0x14  isspace.o [5]
+  .text              ro code    0x20'4520   0x140  iar_Stoulx.o [5]
+  .text              ro code    0x20'4660    0x14  isalpha.o [5]
+  .text              ro code    0x20'4674    0x14  ispunct.o [5]
+  .text              ro code    0x20'4688    0x4c  xfopen.o [5]
+  .text              ro code    0x20'46d4    0x4a  lseek.o [9]
+  .text              ro code    0x20'471e    0x30  read.o [9]
+  .text              ro code    0x20'474e    0x10  write.o [9]
+  .text              ro code    0x20'4760   0x110  XShHandles.o [5]
+  .text              ro code    0x20'4870    0x2c  xgetmemchunk.o [5]
+  .text              ro code    0x20'489c    0x68  xlocale_c.o [5]
+  .text              ro code    0x20'4904    0x14  tolower.o [5]
+  .text              ro code    0x20'4918    0x48  open.o [9]
+  .text              ro code    0x20'4960    0x1e  dwrite.o [9]
+  .text              ro code    0x20'497e    0x20  iarwstd.o [9]
+  .text              ro code    0x20'499e    0x22  iarwrite.o [9]
+  .rodata            const      0x20'49c0    0xb8  zcl.o [1]
+  .text              ro code    0x20'4a78    0xb4  xfwprep.o [5]
+  .rodata            const      0x20'4b2c    0x90  ZMain.o [1]
+  .text              ro code    0x20'4bbc    0x78  lz77_init_single.o [7]
+  .rodata            const      0x20'4c34    0x64  bdb_FindingAndBinding.o [1]
+  .text              ro code    0x20'4c98    0x54  fputc.o [5]
+  .rodata            const      0x20'4cec    0x50  iar_Stoulx.o [5]
+  .rodata            const      0x20'4d3c    0x48  xfoprep.o [5]
+  .rodata            const      0x20'4d84    0x3c  ZMain.o [1]
+  .text              ro code    0x20'4dc0    0x3c  xcloseall.o [5]
+  .rodata            const      0x20'4dfc    0x30  bdb_FindingAndBinding.o [1]
+  .text              ro code    0x20'4e2c    0x28  data_init.o [7]
+  .rodata            const      0x20'4e54    0x24  ZMain.o [1]
+  .iar.init_table    const      0x20'4e78    0x20  - Linker created -
+  .text              ro code    0x20'4e98    0x1e  cmain.o [7]
+  .text              ro code    0x20'4eb6     0x4  low_level_init.o [5]
+  .text              ro code    0x20'4eba     0x4  exit.o [5]
+  .text              ro code    0x20'4ec0     0xe  cexit.o [7]
+  .rodata            const      0x20'4ed0    0x18  ZMain.o [1]
+  .rodata            const      0x20'4ee8    0x18  ZMain.o [1]
+  .text              ro code    0x20'4f00    0x16  xprout.o [5]
+  .text              ro code    0x20'4f18     0xc  putchar.o [5]
+  .rodata            const      0x20'4f24    0x14  ZMain.o [1]
+  .rodata            const      0x20'4f38    0x14  ZMain.o [1]
+  .rodata            const      0x20'4f4c    0x14  ZMain.o [1]
+  .text              ro code    0x20'4f60     0xc  cstartup_M.o [7]
+  .rodata            const      0x20'4f6c     0x8  ZMain.o [1]
+  .rodata            const      0x20'4f74     0x4  ZMain.o [1]
+  .rodata            const      0x20'4f78     0x4  ZMain.o [1]
+  .text              ro code    0x20'4f7c     0x0  cstart_closeall.o [7]
+  .rodata            const      0x20'4f7c     0x0  zero_init3.o [7]
+  .rodata            const      0x20'4f7c     0x0  lz77_init_single.o [7]
+  Initializer bytes  const      0x20'4f7c    0x9c  <for P2-1>
+                              - 0x20'5018  0x4fd8
+
+"P2", part 1 of 3:                          0x172
+  P2-1                        0x2000'4000   0x172  <Init block>
+    .data            inited   0x2000'4000     0x4  ZMain.o [1]
+    .data            inited   0x2000'4004     0x4  ZMain.o [1]
+    .data            inited   0x2000'4008     0x4  ZMain.o [1]
+    .data            inited   0x2000'400c    0x14  ZMain.o [1]
+    .data            inited   0x2000'4020     0x8  rand.o [5]
+    .data            inited   0x2000'4028    0x48  xfiles.o [5]
+    .data            inited   0x2000'4070    0x48  xfiles.o [5]
+    .data            inited   0x2000'40b8    0x48  xfiles.o [5]
+    .data            inited   0x2000'4100    0x20  xfiles.o [5]
+    .data            inited   0x2000'4120    0x48  xlocale_c.o [5]
+    .data            inited   0x2000'4168     0x8  XShttio.o [5]
+    .data            inited   0x2000'4170     0x1  ZMain.o [1]
+    .data            inited   0x2000'4171     0x1  ZMain.o [1]
+                            - 0x2000'4172   0x172
+
+"P2", part 2 of 3:                          0x200
+  .bss               zero     0x2000'4174    0x84  rand.o [5]
+  .bss               zero     0x2000'41f8    0x80  XShHandles.o [5]
+  .bss               zero     0x2000'4278    0x50  xfiles.o [5]
+  .bss               zero     0x2000'42c8    0x50  xfiles.o [5]
+  .bss               zero     0x2000'4318     0xc  ZMain.o [1]
+  .bss               zero     0x2000'4324     0x8  heap0.o [5]
+  .bss               zero     0x2000'432c     0x4  AF.o [1]
+  .bss               zero     0x2000'4330     0x4  bdb.o [1]
+  .bss               zero     0x2000'4334     0x4  bdb_FindingAndBinding.o [1]
+  .bss               zero     0x2000'4338     0x4  OSAL.o [1]
+  .bss               zero     0x2000'433c     0x4  OSAL_Timers.o [1]
+  .bss               zero     0x2000'4340     0x4  zcl.o [1]
+  .bss               zero     0x2000'4344     0x4  zcl.o [1]
+  .bss               zero     0x2000'4348     0x4  zcl.o [1]
+  .bss               zero     0x2000'434c     0x4  zcl.o [1]
+  .bss               zero     0x2000'4350     0x4  zcl.o [1]
+  .bss               zero     0x2000'4354     0x4  zcl.o [1]
+  .bss               zero     0x2000'4358     0x4  zcl.o [1]
+  .bss               zero     0x2000'435c     0x4  ZMain.o [1]
+  .bss               zero     0x2000'4360     0x4  strtok.o [5]
+  .bss               zero     0x2000'4364     0x4  xgetmemchunk.o [5]
+  .bss               zero     0x2000'4368     0x4  xfail_s.o [5]
+  .bss               zero     0x2000'436c     0x2  ZMain.o [1]
+  .bss               zero     0x2000'436e     0x1  bdb.o [1]
+  .bss               zero     0x2000'436f     0x1  OSAL_Memory.o [1]
+  .bss               zero     0x2000'4370     0x1  zcl.o [1]
+  .bss               zero     0x2000'4371     0x1  ZMain.o [1]
+  .bss               zero     0x2000'4372     0x1  XShttio.o [5]
+                            - 0x2000'4373   0x1ff
+
+"P2", part 3 of 3:                         0x2804
+  .noinit            uninit   0x2000'4374  0x1800  OSAL_Memory.o [1]
+  .noinit            uninit   0x2000'5b74     0x4  OSAL_Memory.o [1]
+  HEAP                        0x2000'5b78  0x1000  <Block>
+    HEAP             uninit   0x2000'5b78  0x1000  <Block tail>
+                            - 0x2000'6b78  0x2804
+
+"A3":                                       0x800
+  CSTACK                      0x2000'7800   0x800  <Block>
+    CSTACK           uninit   0x2000'7800   0x800  <Block tail>
+                            - 0x2000'8000   0x800
+
+Unused ranges:
+
+         From           To      Size
+         ----           --      ----
+    0x20'5018    0x27'ffd3  0x7'afbc
+  0x2000'4172  0x2000'4173       0x2
+  0x2000'6b78  0x2000'77ff     0xc88
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address      Size
+          -------      ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1ff:
+          0x2000'4174  0x1ff
+
+Copy/lz77 (__iar_lz77_init_single3)
+    1 source range, total size 0x9c (42% of destination):
+            0x20'4f7c   0x9c
+    1 destination range, total size 0x172:
+          0x2000'4000  0x172
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                   ro code  ro data  rw data
+    ------                   -------  -------  -------
+command line/config:
+    --------------------------------------------------
+    Total:
+
+C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp: [1]
+    AF.o                         188                 4
+    OSAL.o                       524                 4
+    OSAL_Memory.o                424             6'149
+    OSAL_Timers.o                300                 4
+    ZDObject.o                    72
+    ZMain.o                      824      384       53
+    bdb.o                        124                 5
+    bdb_FindingAndBinding.o      164      148        4
+    hal_assert.o                   2
+    zcl.o                     10'372      184       29
+    --------------------------------------------------
+    Total:                    12'994      716    6'252
+
+Router.a: [2]
+    --------------------------------------------------
+    Total:
+
+TIMAC-CC2538.a: [3]
+    --------------------------------------------------
+    Total:
+
+bsp.lib: [4]
+    --------------------------------------------------
+    Total:
+
+dl7M_tlf.a: [5]
+    XShHandles.o                 272               128
+    XShttio.o                     60        4        9
+    abort.o                        6
+    exit.o                         4
+    fclose.o                     126
+    fflush.o                     172
+    fopen.o                       42
+    fputc.o                       84
+    fread.o                      140
+    fseek.o                       36
+    ftell.o                       28
+    heap0.o                      312                 8
+    heaptramp0.o                   4
+    iar_Stolx.o                  144
+    iar_Stoulx.o                 320       80
+    isalpha.o                     20
+    isdigit.o                     10
+    isprint.o                     40
+    ispunct.o                     20
+    isspace.o                     20
+    low_level_init.o               4
+    printf.o                      40
+    putchar.o                     12
+    rand.o                       176        3      140
+    rewind.o                      38
+    strcspn.o                     34
+    strspn.o                      34
+    strtok.o                      76                 4
+    time_trampoline.o              4
+    tolower.o                     20
+    vla_alloc.o                   22
+    xcloseall.o                   60
+    xfail_s.o                     64                 4
+    xfgpos.o                     148
+    xfiles.o                              105      408
+    xfofind.o                    228
+    xfopen.o                      76
+    xfoprep.o                    244       72
+    xfrprep.o                    182
+    xfspos.o                     216
+    xfwprep.o                    180
+    xgetmemchunk.o                44                 4
+    xlocale_c.o                  104       32       72
+    xprintfsmall_nomb.o        1'281
+    xprout.o                      22
+    --------------------------------------------------
+    Total:                     5'169      296      777
+
+m7M_tl.a: [6]
+    --------------------------------------------------
+    Total:
+
+rt7M_tl.a: [7]
+    ABImemcpy_unaligned.o        118
+    ABImemset.o                  102
+    cexit.o                       14
+    cmain.o                       30
+    cstart_closeall.o
+    cstartup_M.o                  12
+    data_init.o                   40
+    lz77_init_single.o           120
+    memchr.o                      88
+    strchr.o                      22
+    strlen.o                      54
+    vector_table_M.o              66
+    zero_init3.o                  58
+    --------------------------------------------------
+    Total:                       724
+
+sdriverlib.lib: [8]
+    cpu.o                         16
+    interrupt.o                   22
+    --------------------------------------------------
+    Total:                        38
+
+shb_l.a: [9]
+    close.o                       24
+    dwrite.o                      30
+    exit.o                        20
+    iarttio.o                    124
+    iarwrite.o                    34
+    iarwstd.o                     32
+    lseek.o                       74
+    open.o                        72
+    read.o                        48
+    remove.o                      20
+    time.o                        18
+    write.o                       16
+    --------------------------------------------------
+    Total:                       512
+
+    Gaps                          21        2
+    Linker created                         32    6'144
+------------------------------------------------------
+    Grand Total:              19'458    1'046   13'173
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                       Address    Size  Type      Object
+-----                       -------    ----  ----      ------
+.iar.init_table$$Base     0x20'4e78           --   Gb  - Linker created -
+.iar.init_table$$Limit    0x20'4e98           --   Gb  - Linker created -
+?main                     0x20'4e99          Code  Gb  cmain.o [7]
+Aldata                  0x2000'4324     0x8  Data  Lc  heap0.o [5]
+CPUcpsid                  0x20'30b5     0x8  Code  Gb  cpu.o [8]
+CPUcpsie                  0x20'30bd     0x8  Code  Gb  cpu.o [8]
+CSTACK$$Base            0x2000'7800           --   Gb  - Linker created -
+CSTACK$$Limit           0x2000'8000           --   Gb  - Linker created -
+HEAP$$Base              0x2000'5b78           --   Gb  - Linker created -
+HEAP$$Limit             0x2000'6b78           --   Gb  - Linker created -
+IntMasterDisable          0x20'2e69     0x6  Code  Gb  interrupt.o [8]
+IntMasterEnable           0x20'2e61     0x8  Code  Gb  interrupt.o [8]
+Region$$Table$$Base       0x20'4e78           --   Gb  - Linker created -
+Region$$Table$$Limit      0x20'4e98           --   Gb  - Linker created -
+STACK_TOP {Abs}         0x2000'8000          Data  Gb  <internal module>
+ZDO_AnyClusterMatches     0x20'30c5    0x48  Code  Gb  ZDObject.o [1]
+_Close_all                0x20'4dc1    0x3c  Code  Gb  xcloseall.o [5]
+_Fgpos                    0x20'4161    0x88  Code  Gb  xfgpos.o [5]
+_Files                  0x2000'4100    0x20  Data  Gb  xfiles.o [5]
+_Fofind                   0x20'3ea5    0x48  Code  Gb  xfofind.o [5]
+_Fofree                   0x20'3eed    0x96  Code  Gb  xfofind.o [5]
+_Fopen                    0x20'4689    0x3c  Code  Gb  xfopen.o [5]
+_Fopen::rwacc             0x20'46c4    0x10  Data  Lc  xfopen.o [5]
+_Foprep                   0x20'3f89    0xf4  Code  Gb  xfoprep.o [5]
+_Foprep::init             0x20'4d3c    0x48  Data  Lc  xfoprep.o [5]
+_Frprep                   0x20'41e9    0xb6  Code  Gb  xfrprep.o [5]
+_Fspos                    0x20'407d    0xd8  Code  Gb  xfspos.o [5]
+_Fwprep                   0x20'4a79    0xb4  Code  Gb  xfwprep.o [5]
+_LitobSmallNoMb           0x20'34cb    0xce  Code  Lc  xprintfsmall_nomb.o [5]
+_LocaleC_isalpha          0x20'48a3     0xc  Code  Gb  xlocale_c.o [5]
+_LocaleC_islower          0x20'489d     0x4  Code  Gb  xlocale_c.o [5]
+_LocaleC_ispunct          0x20'48b9    0x22  Code  Gb  xlocale_c.o [5]
+_LocaleC_isspace          0x20'48db    0x14  Code  Gb  xlocale_c.o [5]
+_LocaleC_isupper          0x20'48a1     0x2  Code  Gb  xlocale_c.o [5]
+_LocaleC_tolower          0x20'48ef     0xc  Code  Gb  xlocale_c.o [5]
+_Nnl                      0x20'4155     0xc  Code  Gb  xfgpos.o [5]
+_PrintfSmallNoMb          0x20'310d   0x3b2  Code  Gb  xprintfsmall_nomb.o [5]
+_Prout                    0x20'4f01    0x16  Code  Gb  xprout.o [5]
+_PutcharSmallNoMb         0x20'3599    0x20  Code  Lc  xprintfsmall_nomb.o [5]
+_PutcharsSmallNoMb        0x20'35b9    0x2e  Code  Lc  xprintfsmall_nomb.o [5]
+_Rand_idx               0x2000'41f4     0x4  Data  Lc  rand.o [5]
+_Rand_rv                0x2000'4174    0x80  Data  Lc  rand.o [5]
+_Randinit               0x2000'4020     0x1  Data  Gb  rand.o [5]
+_Randseed               0x2000'4024     0x4  Data  Gb  rand.o [5]
+_Strtok_ssave           0x2000'4360     0x4  Data  Lc  strtok.o [5]
+__aeabi_memset            0x20'2e7d          Code  Gb  ABImemset.o [7]
+__basic_free              0x20'443b    0x16  Code  Gb  heap0.o [5]
+__basic_free_intern       0x20'4451    0x74  Code  Lc  heap0.o [5]
+__basic_malloc            0x20'4391    0x18  Code  Gb  heap0.o [5]
+__basic_malloc_intern     0x20'43a9    0x92  Code  Lc  heap0.o [5]
+__cexit_closeall          0x20'4ec3          Code  Gb  cexit.o [7]
+__close                   0x20'4351    0x18  Code  Gb  close.o [9]
+__cmain                   0x20'4e99          Code  Gb  cmain.o [7]
+__cstart_closeall         0x20'4f7c          Data  Gb  cstart_closeall.o [7]
+__data_GetMemChunk        0x20'4871    0x2c  Code  Gb  xgetmemchunk.o [5]
+__data_GetMemChunk::start
+                        0x2000'4364     0x4  Data  Lc  xgetmemchunk.o [5]
+__dwrite                  0x20'4961    0x1e  Code  Gb  dwrite.o [9]
+__exit                    0x20'3701    0x14  Code  Gb  exit.o [9]
+__iar_Fail_s              0x20'3629    0x1c  Code  Gb  xfail_s.o [5]
+__iar_Memchr              0x20'36a1          Code  Gb  memchr.o [7]
+__iar_Memset              0x20'2e7d          Code  Gb  ABImemset.o [7]
+__iar_Memset_word         0x20'2e85          Code  Gb  ABImemset.o [7]
+__iar_Stderr            0x2000'40b8    0x48  Data  Gb  xfiles.o [5]
+__iar_Stdin             0x2000'4028    0x48  Data  Gb  xfiles.o [5]
+__iar_Stdout            0x2000'4070    0x48  Data  Gb  xfiles.o [5]
+__iar_Stolx               0x20'3de1    0x8c  Code  Gb  iar_Stolx.o [5]
+__iar_Stoulx              0x20'4521   0x13a  Code  Gb  iar_Stoulx.o [5]
+__iar_Strchr              0x20'3611          Code  Gb  strchr.o [7]
+__iar_close_ttio          0x20'3715    0x2c  Code  Gb  iarttio.o [9]
+__iar_data_init3          0x20'4e2d    0x28  Code  Gb  data_init.o [7]
+__iar_get_ttio            0x20'3741    0x4c  Code  Gb  iarttio.o [9]
+__iar_globLocale        0x2000'4120    0x48  Data  Lc  xlocale_c.o [5]
+__iar_global_Locale       0x20'48fb     0x4  Code  Gb  xlocale_c.o [5]
+__iar_lookup_ttioh        0x20'37bf     0x4  Code  Gb  XShttio.o [5]
+__iar_lz77_init_single3
+                          0x20'4bbd    0x78  Code  Gb  lz77_init_single.o [7]
+__iar_program_start       0x20'4f61          Code  Gb  cstartup_M.o [7]
+__iar_sh_Discard          0x20'47a5    0x42  Code  Gb  XShHandles.o [5]
+__iar_sh_Init             0x20'4761    0x44  Code  Gb  XShHandles.o [5]
+__iar_sh_Move             0x20'47e7    0x46  Code  Gb  XShHandles.o [5]
+__iar_sh_Pos              0x20'482d    0x3e  Code  Gb  XShHandles.o [5]
+__iar_sh_stdout           0x20'497f    0x20  Code  Gb  iarwstd.o [9]
+__iar_sh_write            0x20'499f    0x22  Code  Gb  iarwrite.o [9]
+__iar_ttio_guard_lock     0x20'3791    0x1e  Code  Gb  XShttio.o [5]
+__iar_ttio_guard_unlock
+                          0x20'37af    0x10  Code  Gb  XShttio.o [5]
+__iar_ttio_handles      0x2000'4168     0x8  Data  Lc  XShttio.o [5]
+__iar_unaligned_memcpy    0x20'2c79          Code  Gb  ABImemcpy_unaligned.o [7]
+__iar_unaligned_memcpy4
+                          0x20'2c99          Code  Gb  ABImemcpy_unaligned.o [7]
+__iar_unaligned_memcpy8
+                          0x20'2c99          Code  Gb  ABImemcpy_unaligned.o [7]
+__iar_vla_alloc2          0x20'3d7d    0x12  Code  Gb  vla_alloc.o [5]
+__iar_vla_dealloc2        0x20'3d8f     0x4  Code  Gb  vla_alloc.o [5]
+__iar_zero_init3          0x20'2cef    0x3a  Code  Gb  zero_init3.o [7]
+__low_level_init          0x20'4eb7     0x4  Code  Gb  low_level_init.o [5]
+__lseek                   0x20'46d5    0x4a  Code  Gb  lseek.o [9]
+__open                    0x20'4919    0x48  Code  Gb  open.o [9]
+__read                    0x20'471f    0x30  Code  Gb  read.o [9]
+__time32                  0x20'437d    0x12  Code  Gb  time.o [9]
+__vector_table            0x20'0000          Data  Gb  vector_table_M.o [7]
+__write                   0x20'474f    0x10  Code  Gb  write.o [9]
+_call_main                0x20'4ea5          Code  Gb  cmain.o [7]
+_exit                     0x20'4ec1          Code  Gb  cexit.o [7]
+_main                     0x20'4eb3          Code  Gb  cmain.o [7]
+abort                     0x20'36f9     0x6  Code  Gb  abort.o [5]
+afFindEndPointDesc        0x20'2dc1    0x1a  Code  Gb  AF.o [1]
+afFindEndPointDescList    0x20'2da5    0x1c  Code  Lc  AF.o [1]
+afRegister                0x20'2d7b    0x2a  Code  Gb  AF.o [1]
+afRegisterExtended        0x20'2d29    0x52  Code  Gb  AF.o [1]
+attrList                0x2000'434c     0x4  Data  Lc  zcl.o [1]
+bdb_HeadEpDescriptorList
+                        0x2000'4330     0x4  Data  Gb  bdb.o [1]
+bdb_TaskID              0x2000'436e     0x1  Data  Gb  bdb.o [1]
+bdb_ZclIdentifyCmdInd     0x20'2de5    0x74  Code  Gb  bdb.o [1]
+bdb_ZclType1Clusters      0x20'4dfc    0x30  Data  Gb  bdb_FindingAndBinding.o [1]
+bdb_ZclType2Clusters      0x20'4c34    0x64  Data  Gb  bdb_FindingAndBinding.o [1]
+bdb_zclFindingBindingEpType
+                          0x20'2ee5    0x9c  Code  Gb  bdb_FindingAndBinding.o [1]
+buildZCLIncomingMSG       0x20'3977   0x12c  Code  Lc  ZMain.o [1]
+clusterOptionList       0x2000'4350     0x4  Data  Lc  zcl.o [1]
+digits                    0x20'4d14    0x28  Data  Lc  iar_Stoulx.o [5]
+ebuf                    0x2000'4278    0x50  Data  Lc  xfiles.o [5]
+epList                  0x2000'432c     0x4  Data  Gb  AF.o [1]
+exit                      0x20'4ebb     0x4  Code  Gb  exit.o [5]
+externalEndPointHandlerList
+                        0x2000'4358     0x4  Data  Lc  zcl.o [1]
+fclose                    0x20'3c21    0x7e  Code  Gb  fclose.o [5]
+ff1                     0x2000'5b74     0x4  Data  Lc  OSAL_Memory.o [1]
+fflush                    0x20'4315    0x34  Code  Gb  fflush.o [5]
+fflushOne                 0x20'42a1    0x74  Code  Lc  fflush.o [5]
+fopen                     0x20'3b05    0x2a  Code  Gb  fopen.o [5]
+fputc                     0x20'4c99    0x54  Code  Gb  fputc.o [5]
+fread                     0x20'3b95    0x8c  Code  Gb  fread.o [5]
+free                      0x20'434d     0x4  Code  Gb  heaptramp0.o [5]
+fseek                     0x20'3b2f    0x24  Code  Gb  fseek.o [5]
+ftell                     0x20'3b53    0x1c  Code  Gb  ftell.o [5]
+gpCmdList               0x2000'4348     0x4  Data  Lc  zcl.o [1]
+halAssertHandler          0x20'2e79     0x2  Code  Gb  hal_assert.o [1]
+initDestAddr              0x20'393b    0x12  Code  Lc  ZMain.o [1]
+initSourceEP              0x20'3915    0x26  Code  Lc  ZMain.o [1]
+initialization            0x20'394d    0x2a  Code  Lc  ZMain.o [1]
+isalpha                   0x20'4661    0x14  Code  Gb  isalpha.o [5]
+isdigit                   0x20'3e99     0xa  Code  Gb  isdigit.o [5]
+isprint                   0x20'3e71    0x28  Code  Gb  isprint.o [5]
+ispunct                   0x20'4675    0x14  Code  Gb  ispunct.o [5]
+isspace                   0x20'450d    0x14  Code  Gb  isspace.o [5]
+main                      0x20'37cd   0x148  Code  Gb  ZMain.o [1]
+memchr                    0x20'36a1          Code  Gb  memchr.o [7]
+ndigs                     0x20'4cec    0x28  Data  Lc  iar_Stoulx.o [5]
+obuf                    0x2000'42c8    0x50  Data  Lc  xfiles.o [5]
+osalAddTimer              0x20'2f89    0x68  Code  Gb  OSAL_Timers.o [1]
+osalDeleteTimer           0x20'3019     0xa  Code  Gb  OSAL_Timers.o [1]
+osalFindTimer             0x20'2ff1    0x28  Code  Gb  OSAL_Timers.o [1]
+osalMemStat             0x2000'436f     0x1  Data  Lc  OSAL_Memory.o [1]
+osal_buffer_uint32        0x20'2c4f    0x1e  Code  Gb  OSAL.o [1]
+osal_mem_alloc            0x20'28ed   0x11c  Code  Gb  OSAL_Memory.o [1]
+osal_mem_free             0x20'2a09    0x54  Code  Gb  OSAL_Memory.o [1]
+osal_mem_init             0x20'28c5    0x28  Code  Gb  OSAL_Memory.o [1]
+osal_memcpy               0x20'2a6d    0x1e  Code  Gb  OSAL.o [1]
+osal_memset               0x20'2a8b    0x24  Code  Gb  OSAL.o [1]
+osal_msg_allocate         0x20'2aaf    0x34  Code  Gb  OSAL.o [1]
+osal_msg_deallocate       0x20'2ae3    0x26  Code  Gb  OSAL.o [1]
+osal_msg_enqueue          0x20'2b91    0x48  Code  Gb  OSAL.o [1]
+osal_msg_enqueue_push     0x20'2b1d    0x74  Code  Lc  OSAL.o [1]
+osal_msg_push             0x20'2bd9    0x2a  Code  Gb  OSAL.o [1]
+osal_msg_send             0x20'2b09    0x14  Code  Gb  OSAL.o [1]
+osal_qHead              0x2000'4338     0x4  Data  Gb  OSAL.o [1]
+osal_set_event            0x20'2c03    0x4c  Code  Gb  OSAL.o [1]
+osal_start_timerEx        0x20'3023    0x48  Code  Gb  OSAL_Timers.o [1]
+osal_stop_timerEx         0x20'306b    0x46  Code  Gb  OSAL_Timers.o [1]
+otaTest_Attrs_Basic       0x20'4ee8    0x18  Data  Gb  ZMain.o [1]
+otaTest_Cmds_Basic        0x20'4ed0    0x18  Data  Gb  ZMain.o [1]
+pfnIdentifyTimeChangeCB
+                        0x2000'4334     0x4  Data  Gb  bdb_FindingAndBinding.o [1]
+plugins                 0x2000'4344     0x4  Data  Lc  zcl.o [1]
+printf                    0x20'3d55    0x28  Code  Gb  printf.o [5]
+putchar                   0x20'4f19     0xc  Code  Gb  putchar.o [5]
+rand                      0x20'3ca5    0x94  Code  Gb  rand.o [5]
+rawAFMsg                0x2000'4354     0x4  Data  Lc  zcl.o [1]
+remove                    0x20'4369    0x14  Code  Gb  remove.o [9]
+rewind                    0x20'3b6f    0x26  Code  Gb  rewind.o [5]
+sFileInfo               0x2000'41f8    0x80  Data  Lc  XShHandles.o [5]
+savedZCLTransSeqNum     0x2000'4370     0x1  Data  Lc  zcl.o [1]
+sec_hand                0x2000'4368     0x4  Data  Lc  xfail_s.o [5]
+seedfile                0x2000'4000     0x4  Data  Lc  ZMain.o [1]
+srand                     0x20'3d39     0xa  Code  Gb  rand.o [5]
+strchr                    0x20'3611          Code  Gb  strchr.o [7]
+strcspn                   0x20'44eb    0x22  Code  Gb  strcspn.o [5]
+strlen                    0x20'3669          Code  Gb  strlen.o [7]
+strspn                    0x20'44c9    0x22  Code  Gb  strspn.o [5]
+strtok                    0x20'3d95    0x4c  Code  Gb  strtok.o [5]
+strtol                    0x20'3e6d     0x4  Code  Gb  iar_Stolx.o [5]
+tasksCnt                  0x20'3626     0x1  Data  Gb  ZMain.o [1]
+tasksEvents             0x2000'435c     0x4  Data  Gb  ZMain.o [1]
+testSrcAddr             0x2000'4318     0xc  Data  Lc  ZMain.o [1]
+theHeap                 0x2000'4374  0x1800  Data  Lc  OSAL_Memory.o [1]
+time                      0x20'3c9f     0x4  Code  Gb  time_trampoline.o [5]
+timerHead               0x2000'433c     0x4  Data  Gb  OSAL_Timers.o [1]
+tolower                   0x20'4905    0x14  Code  Gb  tolower.o [5]
+ttio_guard              0x2000'4372     0x1  Data  Lc  XShttio.o [5]
+zclAnalogDataType         0x20'128d    0x22  Code  Gb  zcl.o [1]
+zclAuthorizeRead          0x20'14b1    0x2c  Code  Lc  zcl.o [1]
+zclAuthorizeWrite         0x20'15bd    0x2c  Code  Lc  zcl.o [1]
+zclBasic_Test_Options   0x2000'4008     0x4  Data  Lc  ZMain.o [1]
+zclBuildHdr               0x20'0cb1    0x5e  Code  Lc  zcl.o [1]
+zclCalcHdrSize            0x20'0d0f    0x14  Code  Lc  zcl.o [1]
+zclCmdTable               0x20'49c0    0xb8  Data  Lc  zcl.o [1]
+zclFindAttrRec            0x20'0d97    0x74  Code  Gb  zcl.o [1]
+zclFindAttrRecsList       0x20'0d75    0x22  Code  Gb  zcl.o [1]
+zclFindClusterOption      0x20'0e3f    0x50  Code  Lc  zcl.o [1]
+zclFindCmdRecsList        0x20'0d53    0x22  Code  Lc  zcl.o [1]
+zclFindNextAttrRec        0x20'102f    0xc4  Code  Lc  zcl.o [1]
+zclFindNextCmdRec         0x20'0eef   0x140  Code  Lc  zcl.o [1]
+zclFindPlugin             0x20'0d23    0x30  Code  Lc  zcl.o [1]
+zclGetAttrDataLength      0x20'13c5    0x46  Code  Gb  zcl.o [1]
+zclGetAttrDataLengthUsingCB
+                          0x20'143d    0x36  Code  Lc  zcl.o [1]
+zclGetAuthorizeCB         0x20'0e25    0x1a  Code  Lc  zcl.o [1]
+zclGetClusterOption       0x20'0e99    0x22  Code  Lc  zcl.o [1]
+zclGetDataTypeLength      0x20'12fb    0xca  Code  Gb  zcl.o [1]
+zclGetReadWriteCB         0x20'0e0b    0x1a  Code  Lc  zcl.o [1]
+zclIsLittleEndianMachine
+                          0x20'12af    0x10  Code  Lc  zcl.o [1]
+zclOta_Test_Options     0x2000'4004     0x4  Data  Lc  ZMain.o [1]
+zclParseHdr               0x20'0c35    0x7c  Code  Gb  zcl.o [1]
+zclParseInConfigReportCmd
+                          0x20'18c9   0x18a  Code  Gb  zcl.o [1]
+zclParseInConfigReportRspCmd
+                          0x20'1a53    0x64  Code  Lc  zcl.o [1]
+zclParseInDefaultRspCmd
+                          0x20'1dbb    0x1c  Code  Lc  zcl.o [1]
+zclParseInDiscAttrsCmd    0x20'1dd7    0x22  Code  Gb  zcl.o [1]
+zclParseInDiscAttrsExtRspCmd
+                          0x20'1eb9    0x70  Code  Lc  zcl.o [1]
+zclParseInDiscAttrsRspCmd
+                          0x20'1df9    0x60  Code  Lc  zcl.o [1]
+zclParseInDiscCmdsCmd     0x20'1e59    0x1e  Code  Gb  zcl.o [1]
+zclParseInDiscCmdsRspCmd
+                          0x20'1e77    0x42  Code  Lc  zcl.o [1]
+zclParseInReadCmd         0x20'15e9    0x44  Code  Gb  zcl.o [1]
+zclParseInReadReportCfgCmd
+                          0x20'1ab7    0x56  Code  Gb  zcl.o [1]
+zclParseInReadReportCfgRspCmd
+                          0x20'1b0d   0x1a2  Code  Lc  zcl.o [1]
+zclParseInReadRspCmd      0x20'162d   0x130  Code  Lc  zcl.o [1]
+zclParseInReportCmd       0x20'1caf   0x10c  Code  Gb  zcl.o [1]
+zclParseInWriteCmd        0x20'175d   0x10c  Code  Gb  zcl.o [1]
+zclParseInWriteRspCmd     0x20'1869    0x60  Code  Lc  zcl.o [1]
+zclProcessInDiscAttrs     0x20'2535    0x74  Code  Lc  zcl.o [1]
+zclProcessInDiscAttrsCmd
+                          0x20'25a9    0xe8  Code  Lc  zcl.o [1]
+zclProcessInDiscAttrsExtCmd
+                          0x20'2691    0xfa  Code  Lc  zcl.o [1]
+zclProcessInDiscCmd       0x20'278b   0x13a  Code  Lc  zcl.o [1]
+zclProcessInReadCmd       0x20'1f29   0x10c  Code  Lc  zcl.o [1]
+zclProcessInWriteCmd      0x20'2035   0x1c8  Code  Lc  zcl.o [1]
+zclProcessInWriteUndividedCmd
+                          0x20'2273   0x2c2  Code  Lc  zcl.o [1]
+zclReadAttrData           0x20'140b    0x32  Code  Gb  zcl.o [1]
+zclReadAttrDataUsingCB    0x20'1473    0x3e  Code  Lc  zcl.o [1]
+zclReadWriteCB            0x20'3ae1    0x24  Code  Lc  ZMain.o [1]
+zclRevertWriteUndividedCmd
+                          0x20'21fd    0x76  Code  Lc  zcl.o [1]
+zclSerializeData          0x20'10f3   0x19a  Code  Gb  zcl.o [1]
+zclSetSecurityOption      0x20'0ebb    0x34  Code  Lc  zcl.o [1]
+zclTestSeq              0x2000'4171     0x1  Data  Gb  ZMain.o [1]
+zclTest_Attrs_All         0x20'4b2c    0x90  Data  Gb  ZMain.o [1]
+zclTest_Cmds_Basic        0x20'4f74     0x4  Data  Gb  ZMain.o [1]
+zclTest_DateCode          0x20'4f4c    0x14  Data  Gb  ZMain.o [1]
+zclTest_DeviceEnable    0x2000'4170     0x1  Data  Gb  ZMain.o [1]
+zclTest_HWRevision        0x20'360d     0x1  Data  Gb  ZMain.o [1]
+zclTest_IdentifyTime    0x2000'436c     0x2  Data  Gb  ZMain.o [1]
+zclTest_InClusterList     0x20'4f6c     0x8  Data  Gb  ZMain.o [1]
+zclTest_ManufacturerName
+                          0x20'4f24    0x14  Data  Gb  ZMain.o [1]
+zclTest_ModelId           0x20'4f38    0x14  Data  Gb  ZMain.o [1]
+zclTest_OutClusterList    0x20'4f78     0x4  Data  Gb  ZMain.o [1]
+zclTest_PhysicalEnvironment
+                        0x2000'4371     0x1  Data  Gb  ZMain.o [1]
+zclTest_PowerSource       0x20'360f     0x1  Data  Gb  ZMain.o [1]
+zclTest_SimpleDesc      0x2000'400c    0x14  Data  Lc  ZMain.o [1]
+zclTest_ZCLVersion        0x20'360e     0x1  Data  Gb  ZMain.o [1]
+zclTest_clusterRevision_all
+                          0x20'2e76     0x2  Data  Gb  ZMain.o [1]
+zclWriteAttrData          0x20'14dd    0x6a  Code  Lc  zcl.o [1]
+zclWriteAttrDataUsingCB
+                          0x20'1561    0x5c  Code  Lc  zcl.o [1]
+zcl_BuildAnalogData       0x20'12bf    0x3c  Code  Lc  zcl.o [1]
+zcl_DeviceOperational     0x20'0267    0x62  Code  Lc  zcl.o [1]
+zcl_HandleExternal        0x20'0101    0x60  Code  Gb  zcl.o [1]
+zcl_ProcessMessageMSG     0x20'08ff   0x336  Code  Gb  zcl.o [1]
+zcl_SendCommand           0x20'02c9   0x134  Code  Gb  zcl.o [1]
+zcl_SendDefaultRspCmd     0x20'0621    0x50  Code  Gb  zcl.o [1]
+zcl_SendDiscoverAttrsExtRsp
+                          0x20'0825    0xda  Code  Gb  zcl.o [1]
+zcl_SendDiscoverAttrsRspCmd
+                          0x20'0757    0xce  Code  Gb  zcl.o [1]
+zcl_SendDiscoverCmdsRspCmd
+                          0x20'0671    0xe6  Code  Gb  zcl.o [1]
+zcl_SendReadRsp           0x20'03fd   0x15c  Code  Gb  zcl.o [1]
+zcl_SendWriteRsp          0x20'0559    0xc8  Code  Gb  zcl.o [1]
+zcl_ValidateAttrDataCB  0x2000'4340     0x4  Data  Gb  zcl.o [1]
+zcl_addExternalFoundationHandler
+                          0x20'0065    0x70  Code  Lc  zcl.o [1]
+zcl_getExternalFoundationHandler
+                          0x20'00d5    0x2c  Code  Lc  zcl.o [1]
+zcl_getRawAFMsg           0x20'0161     0x6  Code  Gb  zcl.o [1]
+zcl_registerAttrList      0x20'01a9    0x46  Code  Gb  zcl.o [1]
+zcl_registerClusterOptionList
+                          0x20'01ef    0x42  Code  Gb  zcl.o [1]
+zcl_registerCmdList       0x20'0167    0x42  Code  Gb  zcl.o [1]
+zcl_registerForMsg        0x20'0041    0x10  Code  Gb  zcl.o [1]
+zcl_registerForMsgExt     0x20'0051    0x14  Code  Gb  zcl.o [1]
+zcl_registerReadWriteCB
+                          0x20'0245    0x22  Code  Gb  zcl.o [1]
+
+
+[1] = C:\Users\zfuzzer\zfuzzer\Z-Fuzzer\zstack_iar\Debug\Tmp
+[2] = Router.a
+[3] = TIMAC-CC2538.a
+[4] = bsp.lib
+[5] = dl7M_tlf.a
+[6] = m7M_tl.a
+[7] = rt7M_tl.a
+[8] = sdriverlib.lib
+[9] = shb_l.a
+
+  19'458 bytes of readonly  code memory
+   1'046 bytes of readonly  data memory
+  13'173 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

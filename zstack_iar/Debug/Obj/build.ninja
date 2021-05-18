@@ -1,0 +1,68 @@
+#Generating source browse information for project zstack
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build zcl_genericapp_data.pbi : index zcl_genericapp_data.xcl
+build bdb.pbi : index bdb.xcl
+build bdb_FindingAndBinding.pbi : index bdb_FindingAndBinding.xcl
+build bdb_Reporting.pbi : index bdb_Reporting.xcl
+build bdb_tlCommissioning.pbi : index bdb_tlCommissioning.xcl
+build bdb_touchlink.pbi : index bdb_touchlink.xcl
+build bdb_touchlink_initiator.pbi : index bdb_touchlink_initiator.xcl
+build bdb_touchlink_target.pbi : index bdb_touchlink_target.xcl
+build hal_assert.pbi : index hal_assert.xcl
+build hal_drivers.pbi : index hal_drivers.xcl
+build hal_adc.pbi : index hal_adc.xcl
+build hal_aes.pbi : index hal_aes.xcl
+build hal_ccm.pbi : index hal_ccm.xcl
+build hal_key.pbi : index hal_key.xcl
+build hal_lcd.pbi : index hal_lcd.xcl
+build hal_led.pbi : index hal_led.xcl
+build hal_mac_cfg.pbi : index hal_mac_cfg.xcl
+build hal_sys_ctrl.pbi : index hal_sys_ctrl.xcl
+build hal_timer.pbi : index hal_timer.xcl
+build hal_uart.pbi : index hal_uart.xcl
+build OSAL.pbi : index OSAL.xcl
+build OSAL_Memory.pbi : index OSAL_Memory.xcl
+build OSAL_Timers.pbi : index OSAL_Timers.xcl
+build AF.pbi : index AF.xcl
+build zcl.pbi : index zcl.xcl
+build zcl_general.pbi : index zcl_general.xcl
+build zcl_ha.pbi : index zcl_ha.xcl
+build saddr.pbi : index saddr.xcl
+build ZDApp.pbi : index ZDApp.xcl
+build ZDConfig.pbi : index ZDConfig.xcl
+build ZDNwkMgr.pbi : index ZDNwkMgr.xcl
+build ZDObject.pbi : index ZDObject.xcl
+build ZDProfile.pbi : index ZDProfile.xcl
+build ZDSecMgr.pbi : index ZDSecMgr.xcl
+build OnBoard.pbi : index OnBoard.xcl
+build ZMain.pbi : index ZMain.xcl
+build zstack_part0.pbi : link zcl_genericapp_data.pbi bdb.pbi bdb_FindingAndBinding.pbi bdb_Reporting.pbi bdb_tlCommissioning.pbi bdb_touchlink.pbi
+build zstack_part1.pbi : link bdb_touchlink_initiator.pbi bdb_touchlink_target.pbi hal_assert.pbi hal_drivers.pbi hal_adc.pbi hal_aes.pbi
+build zstack_part2.pbi : link hal_ccm.pbi hal_key.pbi hal_lcd.pbi hal_led.pbi hal_mac_cfg.pbi hal_sys_ctrl.pbi
+build zstack_part3.pbi : link hal_timer.pbi hal_uart.pbi OSAL.pbi OSAL_Memory.pbi OSAL_Timers.pbi AF.pbi
+build zstack_part4.pbi : link zcl.pbi zcl_general.pbi zcl_ha.pbi saddr.pbi ZDApp.pbi ZDConfig.pbi
+build zstack_part5.pbi : link ZDNwkMgr.pbi ZDObject.pbi ZDProfile.pbi ZDSecMgr.pbi OnBoard.pbi ZMain.pbi
+build zstack.pbd : link zstack_part0.pbi zstack_part1.pbi zstack_part2.pbi zstack_part3.pbi zstack_part4.pbi zstack_part5.pbi
+build zstack.pbw : browsedata zstack.pbd
+
+
