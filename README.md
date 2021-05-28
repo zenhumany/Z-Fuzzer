@@ -57,11 +57,11 @@ The following figure shows the workflow of Z-Fuzzer framework.
     
     Run the proxy server first.
     ```python
-    python proxy_server.py
+    python zfuzzer_proxy_server.py
     ```
     Run the fuzzing enginer.
     ```python
-    python fuzzing_zigbee.py
+    python zfuzzer_fuzzing_zigbee.py
     ```
 
 # Discovered Vulnerabilities
