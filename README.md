@@ -73,9 +73,3 @@ Z-Fuzzer has discovered three new CVEs in Texas Instruments Zigbee protocol impl
 |[CVE-2020-27890](https://nvd.nist.gov/vuln/detail/CVE-2020-27890)| Improper Input Validation | High 8.2 | Z-Stack 3.0.1 | Non-compliance |
 |[CVE-2020-27891](https://nvd.nist.gov/vuln/detail/CVE-2020-27891)| Improper Input Validation | High 7.5 | Z-Stack 3.0.1 | Crash |
 |[CVE-2020-27892](https://nvd.nist.gov/vuln/detail/CVE-2020-27892)| Improper Memory Allocation | High 7.5 | Z-Stack 3.0.1 | Crash |
-
-# Publication
-
-Z-Fuzzer was used in the following publication:
-
-* Mengfei Ren, Xiaolei Ren, Huadong Feng, Jiang Ming, and Yu Lei. 2021. Z-Fuzzer: Device-agnostic Fuzzing of Zigbee Protocol Implementation. In Conference on Security and Privacy in Wireless and Mobile Networks (WiSec’21), June 28–July 2, 2021, Abu Dhabi, United Arab Emirates. ACM, New York, NY, USA, 12 pages. https://doi.org/10.1145/3448300.3468296
